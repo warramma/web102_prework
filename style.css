@@ -79,3 +79,6 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+button:hover{
+    cursor: pointer;
+}
