@@ -11,13 +11,15 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-evenly;
     background-color: lightblue;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
-    margin-top: -10px;
+    margin-top: -20px;
     position: sticky;
     top: 0;
+    padding: 0 35px;
 }
 .nav{
     display: flex;
@@ -28,16 +30,17 @@ body {
 .nav ul{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
+    margin-right: 15%;
 }
 .nav ul li{
     margin: 0 auto;
 }
 .nav ul li a:hover{
-    background-color: gray;
+    background-color: rgb(49, 45, 67);
     color: lightblue;
 }
 .nav ul li a{
@@ -49,9 +52,29 @@ body {
     border-radius: 10px;
 }
 
+h2{
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    text-shadow: lightblue 1px 0 10px;
+} 
+span{
+    padding: 10px;
+}
+
+#description-container, h2, #games-description, .search{
+    
+    padding: 5px 15px;
+}
+
+#description-container, #games-description{
+    color: white;
+    font-size: 20px;
+}
 .stats-container {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .stats-container:hover{
@@ -71,7 +94,16 @@ body {
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
 }
-
+#first-game, #second-game{
+    font-weight: 800;
+    font-size: 18px;
+}
+#games-description, .search{
+    color: white;
+}
+label{
+    font-size: 18px;
+}
 #games-container {
     display: flex;
     flex-wrap: wrap;
@@ -105,10 +137,14 @@ body {
 button {
     font-family: 'Cabin';
     border: none;
-    padding: 1%;
+    padding: 3px 10px;
     margin: 1%;
     border-radius: 7px;
+    font-size: 18px;
+    background-color: lightblue;
 }
 button:hover{
     cursor: pointer;
+    background-color: rgb(53, 77, 85);
+    color: white;
 }
