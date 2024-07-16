@@ -24,8 +24,7 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
-<img src='https://i.imgur.com/aH8B3Xu.gif'  title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+<img src="./seamonster_wrammazy.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' >
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ... LICECap for Windows 
 <!-- Recommended tools:
