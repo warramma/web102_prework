@@ -12,26 +12,22 @@ body {
 .header {
     display: flex;
     background-color: lightblue;
-    padding: 1%;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    position: sticky;
+    top: 0;
 }
 .nav{
     display: flex;
     align-items: center;
     background-color: lightblue;
     width: 100%;
-    padding: 10px 15px;
-    margin-left: -10px;
-    margin-top: 1px;
-    position: sticky;
-    top: 0px;
 }
 .nav ul{
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0;
@@ -40,8 +36,17 @@ body {
 .nav ul li{
     margin: 0 auto;
 }
+.nav ul li a:hover{
+    background-color: gray;
+    color: lightblue;
+}
 .nav ul li a{
     text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .stats-container {
