@@ -199,3 +199,24 @@ firstGameContainer.innerHTML = `<p>${topPledge}</p>`
 // do the same for the runner up item
 const runnerUp = second.name;
 secondGameContainer.innerHTML = `<p>${runnerUp}</p>`
+
+
+//-----------EXTRA------------------
+
+//--search for a game given you know the full name
+let searchinput = document.getElementById("search");
+const searchButton = document.getElementById("searchButton");
+
+searchButton.addEventListener("click", search);
+
+function search(){
+    deleteChildElements(gamesContainer);
+    console.log(GAMES_JSON);
+    const result = GAMES_JSON.filter((game)=>{
+        return (game.name).toLowerCase() === (searchinput.value).toLowerCase();
+    });
+    console.log(result);
+    searchinput.focus();
+    searchinput.value = "";
+    addGamesToPage(result);
+}
